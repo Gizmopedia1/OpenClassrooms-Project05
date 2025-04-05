@@ -1,0 +1,20 @@
+.footer {
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-white {
+    width: 125px;
+    align-self: center;
+    padding-top: 65px;
+    padding-bottom: 10px;
+}
+
+.copyright {
+    padding-bottom: 10px;
+}
