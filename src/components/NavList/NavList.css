@@ -1,0 +1,14 @@
+.navlist {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.navlist a {
+    color: black;
+}
+
+.navlist a:hover {
+    color: black;
+    text-decoration: underline;
+}
