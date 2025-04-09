@@ -5,7 +5,6 @@ import locations from '../../data/logements.json';
 
 const Gallery = () => {
     const [items] = useState(locations);
-    console.log(locations)
     return (
         <div className="gallery">
             {items.map(item => (

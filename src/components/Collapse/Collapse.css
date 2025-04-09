@@ -1,14 +1,38 @@
 .collapse {
     width: 100%;
-    height: 55;
+    height: 50px;
+}
+
+.collapse-title {
+    width: 100%;
+    height: 100%;
+    border: none;
     border-radius: 5px;
-    background-color: #FF6060;
     color: white;
+    background-color: #FF6060;
     font-size: 24px;
     font-weight: 700;
-    vertical-align: middle;
-    padding-top: 10px;
-    padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.collapse-text {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(246, 246, 246, 0.45);
+    box-sizing: border-box;
+}
+
+.collapse-text p {
+    margin: 0;
 }

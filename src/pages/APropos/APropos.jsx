@@ -1,3 +1,4 @@
+import './Apropos.scss'
 import Banner from '../../components/Banner/Banner'
 import bannerApropos from '../../assets/banner2.png'
 import Collapse from '../../components/Collapse/Collapse'
@@ -10,23 +11,16 @@ function APropos() {
         <Banner>
           <img src={bannerApropos} alt='Bannière, photo de forêt et montagnes' className='banner' />
         </Banner>
-        {/* <Collapse>
-        <ul>
-            {aproposList.map((qualities) => (
-                <li key={ qualities.id }>{ qualities }</li>
+        <div className="qualities-dropdown">
+            {aproposList.map(item => (
+                <Collapse key={item.id} title={item.title}>
+                  <p>{item.description}</p>
+                </Collapse>
             ))}
-        </ul>
-        </Collapse> */}
+        </div>
       </div>
     </>
   )
 }
 
 export default APropos
-
-
-// {plantList.map((plant) => (
-//   <li key={ plant.id }>
-//       {plant.isBestSale ? <span>🔥</span> : <span>👎</span>}
-//   </li>
-// ))}
