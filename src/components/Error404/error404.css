@@ -1,0 +1,39 @@
+.error404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.h1-404 {
+    font-weight: 700;
+    font-size: 288px;
+    color: #FF6060;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.oups {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.return-home {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.return-home:hover {
+    color: black;
+    text-decoration: underline;
+}
