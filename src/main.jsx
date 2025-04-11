@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './main.css'
 import App from './pages/App/App.jsx'
-import APropos from './pages/APropos/APropos.jsx'
+import LogementTemplate from './pages/LogementTemplate/LogementTemplate.jsx'
+import APropos from './pages/aPropos/APropos.jsx'
 import Page404 from './pages/Page404/Page404.jsx'
 import Nav from './components/Nav/Nav'
 import Footer from './components/Footer/Footer'
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/a-propos" element={<APropos />} />
+            <Route path="/:id" element={<LogementTemplate />} />
             <Route path="/404" element={<Page404 />} />
           </Routes>
           <Footer />

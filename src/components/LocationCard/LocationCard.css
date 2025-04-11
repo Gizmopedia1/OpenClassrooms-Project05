@@ -7,6 +7,11 @@
     position: relative;
 }
 
+.location-card:hover {
+    cursor: pointer;
+
+}
+
 .location-image {
     height: 100%;
     width: 100%;
