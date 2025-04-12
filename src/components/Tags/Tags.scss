@@ -1,0 +1,25 @@
+.tags {
+    margin-bottom: 25px;
+
+}
+
+.tags-text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    
+    p {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 25px;
+        color: white;
+        border-radius: 10px;
+        background-color: #FF6060;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+        align-content: center;
+}
+}

@@ -8,14 +8,11 @@ function APropos() {
   return (
     <>
       <div>
-        <Banner>
-          <img src={bannerApropos} alt='Bannière, photo de forêt et montagnes' className='banner' />
+        <Banner banner={bannerApropos}>
         </Banner>
         <div className="qualities-dropdown">
             {aproposList.map((item) => (
-                <Collapse key={item.id} title={item.title}>
-                  <p>{item.description}</p>
-                </Collapse>
+                <Collapse key={item.id} title={item.title} content={item.description} />
             ))}
         </div>
       </div>

@@ -7,10 +7,7 @@ function App() {
   return (
     <>
       <div>
-        <Banner>
-          <img src={bannerHome} alt='Bannière, photo de plage' className='banner' />
-          <h1 className='banner-heading'>Chez vous, partout et ailleurs</h1>
-        </Banner>
+        <Banner banner={bannerHome} text='Chez vous, partout et ailleurs' />
         <Gallery />
       </div>
     </>

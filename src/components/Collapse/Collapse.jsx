@@ -7,7 +7,7 @@ const chevron = <FontAwesomeIcon icon={faChevronUp} />
 
 import React, { useState } from 'react';
 
-const Collapse = ({ title, children }) => {
+const Collapse = ({ title, content, list }) => {
 	const [isOpen, setIsOpen] = useState(false);
   
 	return isOpen ? (
@@ -18,9 +18,14 @@ const Collapse = ({ title, children }) => {
 					{chevron}
 				</div>
 			</button>
-			<div className="collapse-text">
-				{children}
-			</div>
+			{content && <p className='collapse-text'>{content}</p>}
+			{list && list.length > 0 && (
+  				<ul className="collapse-list">
+    				{list.map((item, index) => (
+      					<li key={index}>{item}</li>
+    				))}
+  				</ul>
+			)}		
 		</div>
 	) : (
 	  	<div className="collapse">

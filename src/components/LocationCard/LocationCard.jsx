@@ -1,14 +1,16 @@
 import React from 'react';
 import './LocationCard.css'
+import { Link } from 'react-router-dom';
+
 
 const LocationCard = ({ cover, title, id }) => {
     return (
         <div className="location-card">
-            <a href={id}>
+            <Link to= {`/details/${id}`} >
                 <img src={cover} alt={title} className="location-image" />
                 <div className="location-gradient"></div>
                 <h2 className="location-title">{title}</h2>
-            </a>
+            </Link>
         </div>
     );
 };
