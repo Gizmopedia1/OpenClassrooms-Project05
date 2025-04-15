@@ -12,3 +12,15 @@
     color: black;
     margin: 0;
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .logement-name {
+        font-size: 18px;
+    }
+    
+    .logement-city {
+        font-size: 14px;
+    }
+
+}

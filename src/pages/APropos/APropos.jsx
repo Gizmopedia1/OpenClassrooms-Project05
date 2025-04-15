@@ -8,8 +8,7 @@ function APropos() {
   return (
     <>
       <div>
-        <Banner banner={bannerApropos}>
-        </Banner>
+        <Banner banner={bannerApropos} />
         <div className="qualities-dropdown">
             {aproposList.map((item) => (
                 <Collapse key={item.id} title={item.title} content={item.description} />

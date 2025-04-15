@@ -11,3 +11,11 @@
   gap: 30px;
   margin-bottom: 30px;
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .qualities-dropdown {
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+}

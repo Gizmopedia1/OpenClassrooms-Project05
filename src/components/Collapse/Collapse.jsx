@@ -1,8 +1,10 @@
 import './Collapse.css'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const chevron = <FontAwesomeIcon icon={faChevronUp} />
+const chevronUp = <FontAwesomeIcon icon={faChevronUp} />
+const chevronDown = <FontAwesomeIcon icon={faChevronDown} />
 
 
 import React, { useState } from 'react';
@@ -14,8 +16,8 @@ const Collapse = ({ title, content, list }) => {
 		<div className="collapse">
 			<button className="collapse-title" onClick={() => setIsOpen(false)}>
 				{title}
-				<div className='chevron'>
-					{chevron}
+				<div className='chevron-down'>
+					{chevronDown}
 				</div>
 			</button>
 			{content && <p className='collapse-text'>{content}</p>}
@@ -31,8 +33,8 @@ const Collapse = ({ title, content, list }) => {
 	  	<div className="collapse">
 			<button className="collapse-title" onClick={() => setIsOpen(true)}>
 				{title}
-				<div className='chevron'>
-					{chevron}
+				<div className='chevron-up'>
+					{chevronUp}
 				</div>
 			</button>
 		</div>

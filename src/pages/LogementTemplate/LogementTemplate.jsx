@@ -1,4 +1,5 @@
 import './LogementTemplate.scss'
+import Slider from '../../components/Slider/Slider.jsx'
 import LogementTitle from '../../components/LogementTitle/LogementTitle.jsx'
 import Host from '../../components/Host/Host.jsx'
 import Collapse from '../../components/Collapse/Collapse.jsx'
@@ -14,6 +15,7 @@ function LogementTemplate() {
   
     return (
         <div>
+          <Slider />
           <div className='title-host'>
             <LogementTitle title={item.title} location={item.location} />
             <Host hostName={item.host.name} hostPicture={item.host.picture} />

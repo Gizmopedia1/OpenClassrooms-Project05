@@ -19,3 +19,25 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .two-collapse {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .title-host {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .tags-stars {
+    flex-direction: column;
+    margin-bottom: 20px;
+    }
+}

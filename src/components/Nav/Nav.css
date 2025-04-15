@@ -10,3 +10,11 @@
 .kasa-logo {
     width: 210px;
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+
+    .kasa-logo {
+        width: 145px;
+    }
+}

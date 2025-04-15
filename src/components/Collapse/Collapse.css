@@ -38,3 +38,30 @@
     list-style: none;
     font-size: 18px;
 }
+
+.chevron-up,
+.chevron-down {
+    display: inline-block;
+    transition: transform 0.5s ease; /* Animation fluide */
+}
+
+.chevron-up:active {
+    transform: rotate(180deg); /* Rotation de 180 degrés */
+}
+
+.chevron-down:active {
+    transform: rotate(-180deg); /* Rotation de 180 degrés */
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .collapse-title {
+        font-size: 13px;
+    }
+    
+    .collapse-text,
+    .collapse-list {
+        font-size: 12px;
+    }
+    
+}
