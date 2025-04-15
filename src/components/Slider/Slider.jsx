@@ -1,22 +1,39 @@
-// import Carousel from 'react-bootstrap/Carousel'
+import { useState } from 'react'
 import './Slider.scss'
 import chevronLeft from '../../assets/chevron-left.png'
 import chevronRight from '../../assets/chevron-right.png'
-import sliderImage from '../../assets/banner1.png'
 
-function Slider () {
+function Slider ({slides}) {
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const totalIndex = slides.length;
+
+	const prevImage = () => {
+		const isFirstSlide = currentIndex === 0;
+		const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+		setCurrentIndex(newIndex);
+	}
+	const nextImage = () => {
+		const isLastSlide = currentIndex === slides.length - 1;
+		const newIndex = isLastSlide ? 0 : currentIndex + 1;
+		setCurrentIndex(newIndex)
+	}
+
+	const hasMultipleSlides = slides.length > 1;
+
 	return <div className='slider'>
-		<img src={sliderImage} className='slider-image' />
-		<div className='chevron-flex'>
-			<img src={chevronLeft} className='chevron-left' />
-			<img src={chevronRight} className='chevron-right' />
-		</div>
-		<p className='picture-number'>1/4</p>
-	</div>
+				{hasMultipleSlides && (
+					<div className='chevron-flex'>
+						<img src={chevronLeft} onClick={prevImage} className='chevron-left' alt='Image précedente' />
+						<img src={chevronRight} onClick={nextImage} className='chevron-right' alt='Image suivante' />
+					</div>
+					)
+				}
+				<img src={slides[currentIndex]} className='slider-image' />
+				{hasMultipleSlides && (
+					<p className='picture-number'>{currentIndex + 1} / {totalIndex}</p>
+					)
+				}
+			</div>
 }
 
 export default Slider
-
-
-// function Slider ({ sliderImage, text }) {
-	// {text && <p className='picture-number'>{text}</p>}

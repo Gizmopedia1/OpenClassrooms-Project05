@@ -12,10 +12,11 @@ import logements from '../../data/logements.json'
 function LogementTemplate() {
     const { id } = useParams();
     const item = logements.find((item) => item.id === id);
-  
+    const slides = item.pictures
+
     return (
         <div>
-          <Slider />
+          <Slider slides={slides}/>
           <div className='title-host'>
             <LogementTitle title={item.title} location={item.location} />
             <Host hostName={item.host.name} hostPicture={item.host.picture} />

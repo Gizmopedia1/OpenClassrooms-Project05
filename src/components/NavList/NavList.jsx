@@ -1,4 +1,4 @@
-import './NavList.css'
+import './NavList.scss'
 
 function NavList() {
     return (

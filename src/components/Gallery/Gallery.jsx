@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Gallery.css'
+import './Gallery.scss'
 import LocationCard from '../LocationCard/LocationCard'
 import locations from '../../data/logements.json';
 

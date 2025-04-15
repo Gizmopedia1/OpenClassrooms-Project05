@@ -1,5 +1,5 @@
 import React from 'react';
-import './LocationCard.css'
+import './LocationCard.scss'
 import { Link } from 'react-router-dom';
 
 

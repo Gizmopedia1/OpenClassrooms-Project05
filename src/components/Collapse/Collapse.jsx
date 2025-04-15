@@ -1,4 +1,4 @@
-import './Collapse.css'
+import './Collapse.scss'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

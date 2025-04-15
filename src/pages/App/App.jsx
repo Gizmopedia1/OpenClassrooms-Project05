@@ -1,16 +1,23 @@
-import './App.scss'
-import Banner from '../../components/Banner/Banner'
-import Gallery from '../../components/Gallery/Gallery'
-import bannerHome from '../../assets/banner1.png'
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import Home from '../Home/Home.jsx'
+import LogementTemplate from '../LogementTemplate/LogementTemplate.jsx'
+import APropos from '../aPropos/APropos.jsx'
+import Page404 from '../Page404/Page404.jsx'
+
 
 function App() {
   return (
-    <>
-      <div>
-        <Banner banner={bannerHome} text='Chez vous, partout et ailleurs' />
-        <Gallery />
-      </div>
-    </>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<Page404 />} />
+            <Route path="/a-propos" element={<APropos />} />
+            <Route path="/details/:id" element={<LogementTemplate />} />
+          </Routes>
   )
 }
 

@@ -1,4 +1,4 @@
-import './error404.css'
+import './error404.scss'
 
 function Error404() {
     return (
