@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // const starEmpty = <FontAwesomeIcon icon={faStar} style={{color: "#E3E3E3"}} />
 
 const Rating = ({ rating }) => {
+  
     const stars = [];
     for (let i = 0; i < 5; i++) {
       stars.push(
