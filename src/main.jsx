@@ -10,9 +10,7 @@ import Footer from './components/Footer/Footer'
 createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <Router>
-          <Nav />
             <App />
-          <Footer />
         </Router>
     </React.StrictMode>,
 )

@@ -5,7 +5,7 @@ import Host from '../../components/Host/Host.jsx'
 import Collapse from '../../components/Collapse/Collapse.jsx'
 import Tags from '../../components/Tags/Tags.jsx'
 import Rating from '../../components/Rating/Rating.jsx'
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import logements from '../../data/logements.json'
 
 
@@ -23,7 +23,7 @@ function LogementTemplate() {
           </div>
           <div className='tags-stars'>
             <Tags tagList={item.tags} />
-            <Rating stars={item.rating} />
+            <Rating rating={item.rating} />
           </div>
           <div className="two-collapse">
             <Collapse title='Description' content={item.description} />

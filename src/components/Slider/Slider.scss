@@ -18,19 +18,30 @@
 }
 
 .chevron-flex {
-    width: 95%;
+    width: 99%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
-        top: 50%;
+        top: 40%;
 
 }
 
 .chevron-left,
 .chevron-right {
-    height: 80px;
+    width: 96px;
+    height: 120px;
+    aspect-ratio: auto 4/5;
+    padding: 0;
+    border: none;
+    background: none;
 }
+
+.chevron-left img,
+.chevron-right img {
+    height: 65%;
+    box-sizing:border-box;
+} 
 
 .chevron-left:hover,
 .chevron-right:hover {
@@ -45,7 +56,7 @@
     color: white;
     text-shadow: 0px 3px 3px rgba(0,0,0,1);
     position: absolute;
-        bottom: 150px;
+        bottom: 0px;
 
 
 }
@@ -56,5 +67,11 @@
         width: 100%;
         aspect-ratio: auto 335/255;
         margin-bottom: 25px;
+    }
+
+    .chevron-flex {
+        position: absolute;
+            top: 30%;
+    
     }
 }

@@ -10,11 +10,11 @@ const chevronDown = <FontAwesomeIcon icon={faChevronDown} />
 import React, { useState } from 'react';
 
 const Collapse = ({ title, content, list }) => {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isClose, setIsClose] = useState(false);
   
-	return isOpen ? (
+	return isClose ? (
 		<div className="collapse">
-			<button className="collapse-title" onClick={() => setIsOpen(false)}>
+			<button className="collapse-title" onClick={() => setIsClose(false)}>
 				{title}
 				<div className='chevron-down'>
 					{chevronDown}
@@ -31,7 +31,7 @@ const Collapse = ({ title, content, list }) => {
 		</div>
 	) : (
 	  	<div className="collapse">
-			<button className="collapse-title" onClick={() => setIsOpen(true)}>
+			<button className="collapse-title" onClick={() => setIsClose(true)}>
 				{title}
 				<div className='chevron-up'>
 					{chevronUp}
