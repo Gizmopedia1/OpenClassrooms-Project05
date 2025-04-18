@@ -1,0 +1,14 @@
+.stars {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+
+    .stars {
+        font-size: 14px;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+}

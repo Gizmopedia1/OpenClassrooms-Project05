@@ -1,3 +1,4 @@
+import './rating.scss'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -8,10 +9,14 @@ const Rating = ({ rating }) => {
   
     const stars = [];
     for (let i = 0; i < 5; i++) {
-      stars.push(i < rating ? starFull : starEmpty );
+      stars.push(
+        <span className='stars' key={i}>
+          {i < rating ? starFull : starEmpty }
+          </span>
+      );
     }
   
-    return <div>{stars}</div>;
+    return stars;
   };
 
   export default Rating;

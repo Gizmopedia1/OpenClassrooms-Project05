@@ -3,7 +3,6 @@ import Slider from '../../components/Slider/Slider.jsx'
 import LogementTitle from '../../components/LogementTitle/LogementTitle.jsx'
 import Host from '../../components/Host/Host.jsx'
 import Collapse from '../../components/Collapse/Collapse.jsx'
-import TwoCollapse from '../../components/TwoCollapse/TwoCollapse.jsx'
 import Tags from '../../components/Tags/Tags.jsx'
 import Rating from '../../components/Rating/Rating.jsx'
 import { useParams } from 'react-router-dom';
@@ -38,10 +37,10 @@ function LogementTemplate() {
               <Rating rating={item.rating} />
             </div>
           </div>
-          <TwoCollapse 
-            title1='Description' content={item.description}
-            title2='Équipements' list={item.equipments}
-          />
+          <div className='two-collapse'>
+          <Collapse title='Description' content={item.description} />
+          <Collapse title='Équipements' list={item.equipments} />
+          </div>
         </div>
     )
   

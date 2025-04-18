@@ -22,6 +22,18 @@
     justify-self: right;
 }
 
+.two-collapse {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    margin-bottom: 50px;
+}
+
+.two-collapse .collapse-title {
+    font-size: 18px;
+}
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
 
@@ -55,4 +67,10 @@
         justify-self: left;
         align-content: center;
         }
+
+    .two-collapse {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
 }

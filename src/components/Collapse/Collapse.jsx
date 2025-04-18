@@ -1,8 +1,8 @@
 import './Collapse.scss'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const chevron = <FontAwesomeIcon icon={faChevronUp} />
+const chevron = <FontAwesomeIcon icon={faChevronDown} />
 
 
 import React, { useState } from 'react';

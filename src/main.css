@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
   margin-left: 6.9%;
@@ -34,5 +35,12 @@ h1 {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  body {
+    margin-top: 4%;
   }
 }
