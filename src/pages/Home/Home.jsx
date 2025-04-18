@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <div>
-        <Banner banner={bannerHome} text='Chez vous, partout et ailleurs' />
+        <Banner banner={bannerHome} text={<>Chez vous, <span className="br-responsive">{" "}<br />{" "}</span>partout et ailleurs</>} />
         <Gallery />
       </div>
     </>

@@ -1,18 +1,10 @@
-#root {
-  width: 100%;
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 20px;
-  box-sizing: border-box;
-}
-
-br {
+.br-responsive {
   display: none;
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
-  br {
+  .br-responsive {
     display: inline;
   }
   }

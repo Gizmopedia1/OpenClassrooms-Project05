@@ -2,7 +2,7 @@ import './TwoCollapse.scss'
 import Collapse from '../../components/Collapse/Collapse.jsx'
 
 
-function TwoCollapse(title1, title2, content, list) {
+function TwoCollapse({ title1, title2, content, list }) {
   
     return (
       <>

@@ -31,7 +31,6 @@
     background-color: rgba(246, 246, 246, 0.45);
     margin: 0;
     box-sizing: border-box;
-    /* border-radius: 5px; */
 }
 
 .collapse-list {
@@ -39,19 +38,14 @@
     font-size: 18px;
 }
 
-.chevron-up,
-.chevron-down {
-    display: inline-block;
-    transition: transform 0.5s ease; /* Animation fluide */
+.chevron {
+    transition: transform 0.5s ease;
 }
 
-.chevron-up:active {
-    transform: rotate(180deg); /* Rotation de 180 degrés */
+.chevron.rotated {
+    transform: rotate(-180deg); 
 }
 
-.chevron-down:active {
-    transform: rotate(-180deg); /* Rotation de 180 degrés */
-}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
