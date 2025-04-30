@@ -7,7 +7,7 @@ import App from './pages/App/App.jsx'
  
 createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Router>
+        <Router basename="/OpenClassrooms-Project05">
             <App />
         </Router>
     </React.StrictMode>,

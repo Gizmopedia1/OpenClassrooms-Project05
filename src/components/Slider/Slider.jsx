@@ -23,8 +23,12 @@ function Slider ({slides}) {
 	return <div className='slider'>
 				{hasMultipleSlides && (
 					<div className='chevron-flex'>
-						<button onClick={prevImage} className='chevron-left' alt='Image précedente'><img src={chevronLeft} /></button>
-						<button onClick={nextImage} className='chevron-right' alt='Image suivante'><img src={chevronRight} /></button>
+						<button onClick={prevImage} className='chevron-left' alt='Image précedente'>
+							<img src={chevronLeft} />
+						</button>
+						<button onClick={nextImage} className='chevron-right' alt='Image suivante'>
+							<img src={chevronRight} />
+						</button>
 					</div>
 					)
 				}
