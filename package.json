@@ -2,7 +2,7 @@
   "name": "kasa-project05",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gizmopedia1.github.io/OpenClassrooms-Project05/",
+  "homepage": "https://gizmopedia1.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
