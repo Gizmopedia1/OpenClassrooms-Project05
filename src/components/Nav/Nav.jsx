@@ -5,7 +5,7 @@ import NavList from '../NavList/NavList'
 function Nav() {
     return (
         <div className='kasa-nav'>
-            < a href="/"><img src={kasaLogo} alt='Kasa' className='kasa-logo' /></a>
+            < a href="/OpenClassrooms-Project05"><img src={kasaLogo} alt='Kasa' className='kasa-logo' /></a>
             <NavList />
         </div>
     )
