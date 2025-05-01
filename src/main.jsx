@@ -6,7 +6,7 @@ import App from './pages/App/App.jsx'
 
  
 ReactDOM.createRoot(document.getElementById("root")).render(
-        <BrowserRouter basename="/OpenClassrooms-Project05">
+        <BrowserRouter basename="https://gizmopedia1.github.io/OpenClassrooms-Project05">
             <App />
         </BrowserRouter>
 )
