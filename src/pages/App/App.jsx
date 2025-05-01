@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
           <Nav />
-          <Routes basename="/OpenClassrooms-Project05">
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/404" element={<Page404 />} />
             <Route path="*" element={<Page404 />} />

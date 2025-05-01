@@ -6,14 +6,7 @@ import App from './pages/App/App.jsx'
 
  
 ReactDOM.createRoot(document.getElementById("root")).render(
-        <BrowserRouter>
+        <BrowserRouter basename="/OpenClassrooms-Project05">
             <App />
         </BrowserRouter>
 )
-
-// index.js ou main.jsx
-// ReactDOM.createRoot(document.getElementById("root")).render(
-//   <BrowserRouter basename="/nom-du-repo">
-//     <App />
-//   </BrowserRouter>
-// );
