@@ -16,12 +16,12 @@ function App() {
   return (
     <div>
           <Nav />
-          <Routes>
-            <Route path="/OpenClassrooms-Project05" element={<Home />} />
-            <Route path="/OpenClassrooms-Project05/404" element={<Page404 />} />
+          <Routes basename="/OpenClassrooms-Project05">
+            <Route path="/" element={<Home />} />
+            <Route path="/404" element={<Page404 />} />
             <Route path="*" element={<Page404 />} />
-            <Route path="/OpenClassrooms-Project05/a-propos" element={<APropos />} />
-            <Route path="/OpenClassrooms-Project05/details/:id" element={<LogementTemplate />} />
+            <Route path="/a-propos" element={<APropos />} />
+            <Route path="/details/:id" element={<LogementTemplate />} />
           </Routes>
           <Footer />
     </div>
